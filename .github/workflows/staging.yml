@@ -32,7 +32,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: development
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: "mapcord.gg"
     steps:
       - name: Deploy to Production
         id: deployment
