@@ -34,6 +34,6 @@ jobs:
       name: development
       url: "mapcord.gg"
     steps:
-      - name: Deploy to Production
+      - name: Deploy to Staging
         id: deployment
         uses: actions/deploy-pages@v1
