@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+import UnderConstruction from "../components/UnderConstruction.astro";
 ---
 
 <Layout title="Mapcord">
@@ -14,13 +15,11 @@ import Card from "../components/Card.astro";
       </div>
     </div>
     <ul role="list" class="link-card-grid">
-      <Card href="/" title="Events" body="Follow up with current events" />
       <Card
-        href="/"
+        href="/games"
         title="Games running"
-        body="Find out what rust servers, minecraft modpacks, eu4 games, etc are running right now"
+        body="Currently running minecraft servers, rust servers, eu4 games, etc"
       />
-      <Card href="/" title="Mappers" body="meow 😺" />
       <Card
         href="https://discord.gg/4sgVT2RQ"
         title="Discord"
@@ -28,6 +27,7 @@ import Card from "../components/Card.astro";
       />
     </ul>
   </main>
+  <UnderConstruction />
 </Layout>
 
 <style>
@@ -55,13 +55,6 @@ import Card from "../components/Card.astro";
     line-height: 1;
     text-align: center;
     margin-bottom: 1em;
-  }
-  .text-gradient {
-    background-image: var(--accent-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 400%;
-    background-position: 0%;
   }
   .instructions {
     margin-bottom: 2rem;
