@@ -1,0 +1,60 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Minecraft">
+  <main>
+    <table>
+      <thead>
+        <tr>
+          <th> Mod Pack</th>
+          <th>Version</th>
+          <th>Game Version</th>
+          <th>Server URL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td
+            ><a
+              href="https://www.curseforge.com/minecraft/modpacks/sevtech-ages"
+              >Sevtech Ages</a
+            ></td
+          >
+          <td>3.2.3</td>
+          <td>1.12.2</td>
+          <td
+            ><a
+              href="https://discord.com/channels/988050512802889818/1131992320741478440/1175535374194446346"
+              >Server</a
+            ></td
+          >
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <style>
+    main {
+      margin: auto;
+      padding: 1rem;
+      width: 800px;
+      max-width: calc(100% - 2rem);
+      color: white;
+      font-size: 20px;
+      line-height: 1.6;
+    }
+    table {
+      table-layout: auto;
+    }
+    th {
+      column-width: 10rem;
+    }
+    td {
+      text-align: center;
+    }
+    a {
+      color: rgb(122, 199, 199);
+    }
+  </style>
+</Layout>
